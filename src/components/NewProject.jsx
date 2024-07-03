@@ -27,9 +27,9 @@ export default function NewProject({onAdd}){
                 onClick={handleSave}>Save</button></li>
         </menu>
         <div>
-            <Input ref={title} label="Title"/>
+            <Input type="text" ref={title} label="Title"/>
             <Input ref={description} label="Description" textarea/>    {/* can also use textare={true} it will be same  */}
-            <Input ref={dueDate} label="Due Date"/>
+            <Input type="date" ref={dueDate} label="Due Date"/>
         </div>
     </div>
 )}
